@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div class="semi">
+	<div class="semix" style="background-color: rgba(0, 1, 0, 0.92); border-radius: 25px;">
+		<h2><%=@post.title%></h2><br>
+		<%= image_tag(@post.image_url)%><br>
+		<h2 style="font-size: 18px; line-height: 1.8;"><%=@post.content%></h2><br>
+		<h2><%=@post.author%></h2><br>
+		
+	</div>
+	<%= link_to 'Edit', edit_post_path(@post) %> |
+	<%= link_to 'Back', posts_path %>
+</div>
+
+

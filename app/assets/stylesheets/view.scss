@@ -1,0 +1,101 @@
+// Place all the styles related to the view controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html { 
+  background: url("/assets/bg4.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+}
+
+body{
+	background-color: transparent;
+	width: 100vw;
+}
+
+h1,h2,h3{
+	color:green;
+	font-family: monaco;
+	text-align: center;
+}
+
+.manifesto{
+	text-align: center;
+	margin-top: 42vh;
+}
+
+.post_holder{
+	text-align: center;
+	margin-top: 8vh;
+	background-color: white;
+	margin-right: 15vh;
+	margin-left: 15vh;
+	min-height: 40vh;
+}
+
+div{
+}
+
+a {
+	color:green;
+}
+
+a:hover{
+	color:lightgreen;
+}
+.this{
+	margin-left: 20%;
+}
+
+.w{
+	color:white;
+}
+
+img{
+	display:block;
+    margin:auto;
+    max-width: 40vw;
+    max-height: 30vh;
+}
+
+.semi{
+	margin:20%;
+	margin-bottom: 10%;
+	color: green;
+	background-color:rgba(0,1,0,0.82);
+	border-radius: 25px;
+}
+.semil{
+	margin:20%;
+	margin-bottom: 10%;
+	color: green;
+	background-color:rgba(198, 198, 198, 0.69);
+	border-radius: 25px;
+}
+
+.semix{
+	padding:5%;
+}
+
+.per{
+	background-color: rgba(0,1,0,1);
+	margin:2%;
+	padding:3%;
+	border-radius: 25px;
+}
+
+.home{
+	font-size:40vh;
+	position:absolute;
+	margin-left: 42vw;
+	margin-right: 45vw;
+	top:-3%;
+}
+
+.home a{
+	color:rgba(0,0,0,0);
+}

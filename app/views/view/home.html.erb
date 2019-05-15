@@ -1,0 +1,18 @@
+<div>
+	<div class="manifesto">
+		<h2>Hello World?</h2>
+	</div>
+	<div class="semil" style="margin-top: 5%;">
+		<div class="semix" style="padding:1%;">
+			<% @posts.each do |post|%>
+			<div>
+				<div class="per">
+					<h2><%= link_to post.title, post%></h2><br>
+					<%= image_tag(post.image_url)%>
+					<h3>By <%= post.author%></h3>
+				</div>
+			</div>
+			<%end%>
+		</div>
+	</div>
+</div>

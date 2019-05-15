@@ -1,0 +1,33 @@
+<div class="semi">
+  <div class = "semix">
+    <p id="notice"><%= notice %></p>
+
+    <h1>Posts</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+            <td>Question</td>
+            <td>Author</td>
+          </tr>
+        <% @posts.each do |post| %>
+          <tr style="line-height: 1.8;">
+            <td style="max-width: 35vw;"><%= link_to post.title, post %></td>
+            <td class="w"><%=post.author%></td>
+            <td style="padding: 5vw;><%= link_to 'Edit', edit_post_path(post) %></td>
+            <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+</div>
+  <%= link_to 'New Post', new_post_path %>
+</div>
